@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  top: 5vh;
+}
+
+.box {
+  margin-inline-start: 20vw;
+  margin-block-start: 20vh;
+  background-color: rgb(87, 181, 87);
+  height: 50vh;
+  width: 60vw;
+}
+
+.startBtn {
+  height: 8vh;
+  width: 10vw;
+  font-weight: 600;
+  background-color: white;
+  position: relative;
+  top: 30vh;
+  margin-right: 5vw;
+  border-radius: 50%;
+}
+
+.stopBtn {
+  height: 8vh;
+  width: 10vw;
+  font-weight: 600;
+  background-color: white;
+  position: relative;
+  top: 30vh;
+
+  border-radius: 50%;
+}
+
+.resetBtn {
+  height: 8vh;
+  width: 10vw;
+  font-weight: 600;
+  background-color: white;
+  position: relative;
+  top: 30vh;
+  margin-left: 5vw;
+  border-radius: 50%;
+}
+
+.deleteAll {
+  height: 8vh;
+  font-weight: 600;
+  background-color: rgb(240, 167, 167);
+  position: relative;
+  top: 15vh;
+  left: 10vw;
+  border-radius: 50%;
+}
