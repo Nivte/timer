@@ -18,6 +18,8 @@ function clock() {
     const exactTime =
       now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 
+    $time.style.fontSize="1.7rem"
+
     $box.appendChild($time);
     $time.innerHTML = exactTime;
   }, 1000);
@@ -43,7 +45,7 @@ function start() {
   if ($time == 0) {
     $time = document.createElement("p");
     field = document.createElement("div");
-    field.style.backgroundColor = "yellow";
+    field.style.backgroundColor = "#17B169";
     field.style.marginBlock = "5vh";
     field.style.borderRadius = "10%";
     field.style.border = "solid black";
@@ -60,7 +62,6 @@ function start() {
 
         field.appendChild($time);
         $time.innerHTML = exactTime;
-
 
         decimas++;
 
@@ -92,6 +93,8 @@ function stop() {
     hours + ":" + minutes + ":" + seconds + "." + (decimas - 1);
   $stopped.style.marginLeft = "40vw";
   $stopped.style.marginTop = "0vh";
+  $stopped.style.color= "red";
+  $stopped.style.fontWeight= "600";
 
   active = 1;
 }

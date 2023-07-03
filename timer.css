@@ -11,7 +11,7 @@ h2 {
 .box {
   margin-inline-start: 20vw;
   margin-block-start: 20vh;
-  background-color: rgb(87, 181, 87);
+  background-color: #1CAC78;
   height: 50vh;
   width: 60vw;
 }
@@ -52,9 +52,10 @@ h2 {
 .deleteAll {
   height: 8vh;
   font-weight: 600;
-  background-color: rgb(240, 167, 167);
+  background-color: rgb(143, 174, 156);
   position: relative;
   top: 15vh;
   left: 10vw;
+
   border-radius: 50%;
 }
