@@ -18,7 +18,7 @@ function clock() {
     const exactTime =
       now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 
-    $time.style.fontSize="1.7rem"
+    $time.style.fontSize = "1.7rem";
 
     $box.appendChild($time);
     $time.innerHTML = exactTime;
@@ -81,6 +81,7 @@ function start() {
         }
 
         $time.style.marginLeft = "25vw";
+        $time.style.fontSize = "1.7rem";
       }
     }, 100);
   }
@@ -93,8 +94,9 @@ function stop() {
     hours + ":" + minutes + ":" + seconds + "." + (decimas - 1);
   $stopped.style.marginLeft = "40vw";
   $stopped.style.marginTop = "0vh";
-  $stopped.style.color= "red";
-  $stopped.style.fontWeight= "600";
+  $stopped.style.color = "red";
+  $stopped.style.fontWeight = "600";
+  $stopped.style.fontSize = "1.7rem";
 
   active = 1;
 }
