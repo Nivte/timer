@@ -71,3 +71,69 @@ h2 {
 
   border-radius: 50%;
 }
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .box {
+    margin-inline-start: 15vw;
+    margin-block-start: 12vh;
+    background-color: #1cac78;
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .startBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+    margin-right: 5vw;
+    border-radius: 50%;
+  }
+
+  .startBtn:focus {
+    background-color: yellow;
+  }
+
+  .stopBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+
+    border-radius: 50%;
+  }
+
+  .stopBtn:focus {
+    background-color: yellow;
+  }
+
+  .resetBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+    margin-left: 5vw;
+    border-radius: 50%;
+  }
+
+  .resetBtn:focus {
+    background-color: yellow;
+  }
+
+  .deleteAll {
+    height: 8vh;
+    font-weight: 600;
+    background-color: rgb(143, 174, 156);
+    position: relative;
+    top: 15vh;
+    left: 1vw;
+
+    border-radius: 50%;
+  }
+}

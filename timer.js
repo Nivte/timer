@@ -55,6 +55,11 @@ function start() {
     field.style.overflow = "scroll";
     document.body.appendChild(field);
 
+    const mediaQuery = window.matchMedia("(max-width:700px)");
+    if (mediaQuery.matches) {
+      field.style.width = "70vw";
+    }
+
     setInterval(() => {
       if (active == 0) {
         const now = new Date();
@@ -81,7 +86,7 @@ function start() {
         }
 
         $time.style.marginLeft = "25vw";
-        $time.style.fontSize = "1.7rem";
+        $time.style.fontSize = "3vh";
       }
     }, 100);
   }
@@ -96,7 +101,7 @@ function stop() {
   $stopped.style.marginTop = "0vh";
   $stopped.style.color = "red";
   $stopped.style.fontWeight = "600";
-  $stopped.style.fontSize = "1.7rem";
+  $stopped.style.fontSize = "3vh";
 
   active = 1;
 }
