@@ -58,6 +58,10 @@ function start() {
     const mediaQuery = window.matchMedia("(max-width:700px)");
     if (mediaQuery.matches) {
       field.style.width = "70vw";
+      field.style.position = "absolute";
+      field.style.top = "70vh";
+      field.style.left = "-7.5vw";
+   
     }
 
     setInterval(() => {
