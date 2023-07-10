@@ -1,4 +1,4 @@
-let $box = document.getElementById("box");
+let $box: HTMLElement = document.getElementById("box");
 
 $box.style.color = "black";
 $box.style.borderRadius = "50%";
@@ -7,15 +7,15 @@ $box.style.textAlign = "center";
 
 console.log($box);
 
-let $p = document.createElement("p");
+let $p: HTMLElement = document.createElement("p");
 
 $box.appendChild($p);
 
-function clock() {
-  let $time = document.createElement("p");
+function clock(): undefined {
+  let $time: HTMLElement = document.createElement("p");
   setInterval(() => {
-    const now = new Date();
-    const exactTime =
+    const now: Date = new Date();
+    const exactTime: string =
       now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 
     $time.style.fontSize = "1.7rem";
@@ -27,22 +27,23 @@ function clock() {
 
 clock();
 
-let hours = 0;
-let minutes = 0;
-let seconds = 0;
-let decimas = 0;
+let hours: number = 0;
+let minutes: number = 0;
+let seconds: number = 0;
+let tenths: number = 0;
 
-let num = 1;
+let num: number = 1;
 
-let $time = 0;
-let active = 0;
+let $time: HTMLParagraphElement;
 
-let field = "";
+let active: number = 0;
 
-function start() {
+let field: HTMLDivElement;
+
+function start(): undefined {
   active = 0;
 
-  if ($time == 0) {
+  if (tenths === 0) {
     $time = document.createElement("p");
     field = document.createElement("div");
     field.style.backgroundColor = "#17B169";
@@ -55,28 +56,28 @@ function start() {
     field.style.overflow = "scroll";
     document.body.appendChild(field);
 
-    const mediaQuery = window.matchMedia("(max-width:700px)");
+    const mediaQuery: MediaQueryList = window.matchMedia("(max-width:700px)");
     if (mediaQuery.matches) {
       field.style.width = "70vw";
       field.style.position = "absolute";
       field.style.top = "70vh";
       field.style.left = "-7.5vw";
-   
     }
 
     setInterval(() => {
       if (active == 0) {
-        const now = new Date();
-        const exactTime = hours + ":" + minutes + ":" + seconds + ":" + decimas;
+        const now: Date = new Date();
+        const exactTime: string =
+          hours + ":" + minutes + ":" + seconds + ":" + tenths;
 
         field.appendChild($time);
         $time.innerHTML = exactTime;
 
-        decimas++;
+        tenths++;
 
-        if (decimas === 10) {
+        if (tenths === 10) {
           seconds++;
-          decimas = 0;
+          tenths = 0;
         }
 
         if (seconds === 60) {
@@ -96,11 +97,11 @@ function start() {
   }
 }
 
-function stop() {
-  let $stopped = document.createElement("p");
+function stop(): undefined {
+  let $stopped: HTMLElement = document.createElement("p");
   field.appendChild($stopped);
   $stopped.innerHTML =
-    hours + ":" + minutes + ":" + seconds + "." + (decimas - 1);
+    hours + ":" + minutes + ":" + seconds + "." + (tenths - 1);
   $stopped.style.marginLeft = "40vw";
   $stopped.style.marginTop = "0vh";
   $stopped.style.color = "red";
@@ -110,11 +111,11 @@ function stop() {
   active = 1;
 }
 
-function reset() {
+function reset(): undefined {
   active = 0;
   seconds = 0;
 }
 
-function deleteAll() {
+function deleteAll(): undefined {
   field.innerHTML = "";
 }
