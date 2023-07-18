@@ -11,7 +11,7 @@ function clock() {
     setInterval(() => {
         const now = new Date();
         const exactTime = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-        $time.style.fontSize = "1.7rem";
+        $time.style.fontSize = "10rem";
         $box.appendChild($time);
         $time.innerHTML = exactTime;
     }, 1000);

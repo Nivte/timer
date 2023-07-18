@@ -11,7 +11,7 @@ let $p: HTMLElement = document.createElement("p");
 
 $box.appendChild($p);
 
-function clock(): undefined {
+function clock(): void {
   let $time: HTMLElement = document.createElement("p");
   setInterval(() => {
     const now: Date = new Date();
@@ -40,7 +40,7 @@ let active: number = 0;
 
 let field: HTMLDivElement;
 
-function start(): undefined {
+function start(): void {
   active = 0;
 
   if (tenths === 0) {
@@ -97,7 +97,7 @@ function start(): undefined {
   }
 }
 
-function stop(): undefined {
+function stop(): void {
   let $stopped: HTMLElement = document.createElement("p");
   field.appendChild($stopped);
   $stopped.innerHTML =
@@ -111,11 +111,11 @@ function stop(): undefined {
   active = 1;
 }
 
-function reset(): undefined {
+function reset(): void {
   active = 0;
   seconds = 0;
 }
 
-function deleteAll(): undefined {
+function deleteAll(): void {
   field.innerHTML = "";
 }
