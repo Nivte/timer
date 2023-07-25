@@ -3,10 +3,10 @@ body {
 }
 
 h2 {
-  text-align: center;
-  position: relative;
+  font-size: 4vh;
+  position: absolute;
   top: 5vh;
-  font-size: 5rem;
+  left: 40vw;
 }
 
 .box {
@@ -15,7 +15,6 @@ h2 {
   background-color: #1cac78;
   height: 50vh;
   width: 50vw;
-
 }
 
 .startBtn {
@@ -27,7 +26,7 @@ h2 {
   top: 30vh;
   margin-right: 5vw;
   border-radius: 50%;
-  font-size: 3rem;
+  font-size: 4vh;
 }
 
 .startBtn:focus {
@@ -41,7 +40,7 @@ h2 {
   background-color: white;
   position: relative;
   top: 30vh;
-  font-size: 3rem;
+  font-size: 4vh;
 
   border-radius: 50%;
 }
@@ -59,7 +58,7 @@ h2 {
   top: 30vh;
   margin-left: 5vw;
   border-radius: 50%;
-  font-size: 3rem;
+  font-size: 4vh;
 }
 
 .resetBtn:focus {
@@ -73,11 +72,18 @@ h2 {
   position: relative;
   top: 15vh;
   left: 10vw;
-  font-size: 3rem;
+  font-size: 4vh;
   border-radius: 50%;
 }
 
 @media screen and (min-width: 0px) and (max-width: 700px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 20vw;
+  }
+
   .box {
     margin-inline-start: 15vw;
     margin-block-start: 12vh;
@@ -90,6 +96,7 @@ h2 {
     height: 8vh;
     width: 14vw;
     font-weight: 600;
+    font-size: 2vh;
     background-color: white;
     position: relative;
     top: 30vh;
@@ -108,7 +115,7 @@ h2 {
     background-color: white;
     position: relative;
     top: 30vh;
-
+    font-size: 2vh;
     border-radius: 50%;
   }
 
@@ -119,12 +126,13 @@ h2 {
   .resetBtn {
     height: 8vh;
     width: 14vw;
-    font-size: 3rem;
-    background-color: rgb(192, 31, 31);
+    font-size: 4vh;
+
     position: relative;
     top: 30vh;
     margin-left: 5vw;
     border-radius: 50%;
+    font-size: 2vh;
   }
 
   .resetBtn:focus {
@@ -138,7 +146,213 @@ h2 {
     position: relative;
     top: -5vh;
     left: 1vw;
-
+    font-size: 2vh;
     border-radius: 50%;
   }
 }
+
+
+@media screen and (min-width: 700px) and (max-width: 1400px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 30vw;
+  }
+
+  .box {
+    margin-inline-start: 15vw;
+    margin-block-start: 12vh;
+    background-color: #1cac78;
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .startBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+    margin-right: 5vw;
+    border-radius: 50%;
+  }
+
+  .startBtn:focus {
+    background-color: yellow;
+  }
+
+  .stopBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+    font-size: 2vh;
+    border-radius: 50%;
+  }
+
+  .stopBtn:focus {
+    background-color: yellow;
+  }
+
+  .resetBtn {
+    height: 8vh;
+    width: 14vw;
+    font-size: 4vh;
+
+    position: relative;
+    top: 30vh;
+    margin-left: 5vw;
+    border-radius: 50%;
+    font-size: 2vh;
+  }
+
+  .resetBtn:focus {
+    background-color: yellow;
+  }
+
+  .deleteAll {
+    height: 8vh;
+    font-weight: 600;
+    background-color: rgb(143, 174, 156);
+    position: relative;
+    top: -5vh;
+    left: 1vw;
+    font-size: 2vh;
+    border-radius: 50%;
+  }
+}
+
+
+@media screen and (min-width: 450px) and (max-width: 550px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 25vw;
+  }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 800px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 32vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 38vw;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 42vw;
+  }
+}
+
+
+
+/* @media screen and (min-width: 1400px) and (max-width: 1400px) {
+  h2 {
+    font-size: 3vh;
+
+    top: 1vh;
+    left: 20vw;
+  }
+
+  .box {
+    margin-inline-start: 15vw;
+    margin-block-start: 12vh;
+    background-color: #1cac78;
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .startBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    font-size: 2vh;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+    margin-right: 5vw;
+    border-radius: 50%;
+  }
+
+  .startBtn:focus {
+    background-color: yellow;
+  }
+
+  .stopBtn {
+    height: 8vh;
+    width: 14vw;
+    font-weight: 600;
+    background-color: white;
+    position: relative;
+    top: 30vh;
+    font-size: 2vh;
+    border-radius: 50%;
+  }
+
+  .stopBtn:focus {
+    background-color: yellow;
+  }
+
+  .resetBtn {
+    height: 8vh;
+    width: 14vw;
+    font-size: 4vh;
+
+    position: relative;
+    top: 30vh;
+    margin-left: 5vw;
+    border-radius: 50%;
+    font-size: 2vh;
+  }
+
+  .resetBtn:focus {
+    background-color: yellow;
+  }
+
+  .deleteAll {
+    height: 8vh;
+    font-weight: 600;
+    background-color: rgb(143, 174, 156);
+    position: relative;
+    top: -5vh;
+    left: 1vw;
+    font-size: 2vh;
+    border-radius: 50%;
+  }
+} */
+
+
+
+
+
+
+
+/* @media screen and (max-height: 600px) {
+  h2 {
+    top: 5vh;
+    left: 45vw;
+  }
+} */
+
+
