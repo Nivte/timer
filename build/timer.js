@@ -31,27 +31,37 @@ function clock() {
 
     const mediaQuery4000 = window.matchMedia("(max-width:4000px)");
     if (mediaQuery4000.matches) {
-      $time.style.fontSize = "6vh";
+      $time.style.fontSize = "5vh";
       $time.style.position = "absolute";
-      $time.style.left = "45vw";
+      $time.style.left = "45.5vw";
 
     }
 
 
-    const mediaQuery800 = window.matchMedia("(max-width:800px)");
-    if (mediaQuery800.matches) {
+    const mediaQuery950 = window.matchMedia("(max-width:950px)");
+    if (mediaQuery950.matches) {
+      $time.style.fontSize = "6vh";
+      $time.style.position = "absolute";
+      $time.style.left = "44vw";
+    }
+
+
+    const mediaQuery650 = window.matchMedia("(max-width:650px)");
+    if (mediaQuery650.matches) {
       $time.style.fontSize = "6vh";
       $time.style.position = "absolute";
       $time.style.left = "40vw";
     }
 
 
-    const mediaQuery455 = window.matchMedia("(max-width:455px)");
-    if (mediaQuery455.matches) {
+    const mediaQuery370 = window.matchMedia("(max-width:370px)");
+    if (mediaQuery370.matches) {
       $time.style.fontSize = "6vh";
       $time.style.position = "absolute";
       $time.style.left = "34vw";
     }
+
+
   }, 1000);
 }
 clock();

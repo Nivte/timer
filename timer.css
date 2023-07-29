@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+
+.pic {
+  height: 40vh;
+  width: 15vw;
+  position: absolute;
+  top: 20vh;
+  left: 80vw;
+  border-radius: 30%;
+}
+
+
+
 h2 {
   font-size: 4vh;
   position: absolute;
@@ -84,6 +96,18 @@ h2 {
     left: 20vw;
   }
 
+
+  .pic {
+    height: 20vh;
+    width: 15vw;
+    position: absolute;
+    top: 60vh;
+    left: 80vw;
+    border-radius: 30%;
+  }
+
+
+
   .box {
     margin-inline-start: 15vw;
     margin-block-start: 12vh;
@@ -159,6 +183,21 @@ h2 {
     top: 1vh;
     left: 30vw;
   }
+
+
+
+  .pic {
+    height: 40vh;
+    width: 15vw;
+    position: absolute;
+    top: 60vh;
+    left: 80vw;
+    border-radius: 30%;
+  }
+
+
+
+
 
   .box {
     margin-inline-start: 15vw;
