@@ -267,7 +267,7 @@ h2 {
 }
 
 
-@media screen and (min-width: 450px) and (max-width: 550px) {
+@media screen and (min-width: 0px) and (max-width: 550px) {
   h2 {
     font-size: 3vh;
 
@@ -286,13 +286,25 @@ h2 {
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1400px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
   h2 {
     font-size: 3vh;
 
     top: 1vh;
     left: 38vw;
   }
+
+
+  .pic {
+    height: 25vh;
+    width: 15vw;
+    position: absolute;
+    top: 50vh;
+    left: 82vw;
+    border-radius: 30%;
+  }
+
+
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -302,6 +314,19 @@ h2 {
     top: 1vh;
     left: 42vw;
   }
+
+
+  .pic {
+    height: 25vh;
+    width: 15vw;
+    position: absolute;
+    top: 50vh;
+    left: 82vw;
+    border-radius: 30%;
+  }
+
+
+
 }
 
 

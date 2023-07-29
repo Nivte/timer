@@ -40,15 +40,15 @@ function clock() {
 
     const mediaQuery950 = window.matchMedia("(max-width:950px)");
     if (mediaQuery950.matches) {
-      $time.style.fontSize = "6vh";
+      $time.style.fontSize = "4vh";
       $time.style.position = "absolute";
-      $time.style.left = "44vw";
+      $time.style.left = "43vw";
     }
 
 
     const mediaQuery650 = window.matchMedia("(max-width:650px)");
     if (mediaQuery650.matches) {
-      $time.style.fontSize = "6vh";
+      $time.style.fontSize = "4vh";
       $time.style.position = "absolute";
       $time.style.left = "40vw";
     }
@@ -56,7 +56,7 @@ function clock() {
 
     const mediaQuery370 = window.matchMedia("(max-width:370px)");
     if (mediaQuery370.matches) {
-      $time.style.fontSize = "6vh";
+      $time.style.fontSize = "4vh";
       $time.style.position = "absolute";
       $time.style.left = "34vw";
     }
