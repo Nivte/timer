@@ -274,6 +274,17 @@ h2 {
     top: 1vh;
     left: 25vw;
   }
+
+
+  .pic {
+    height: 20vh;
+    width: 15vw;
+    position: absolute;
+    top: 54vh;
+    left: 81vw;
+    border-radius: 30%;
+  }
+
 }
 
 
